@@ -73,5 +73,10 @@ public class Demo {
 
         Predicate<String> nam = (name)->  name.equals("hamza");
         System.out.println(nam.test("hamzaa"));
+
+        /* binary operator */
+
+        BinaryOperator<Integer> add = (a,b)->a+b;
+        System.out.println((add.apply(1,2)));
     }
 }
