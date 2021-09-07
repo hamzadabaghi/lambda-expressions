@@ -69,6 +69,9 @@ public class Demo {
         Function<String,Integer> map = String::length;
         System.out.println(map.apply("hamza"));
 
-        /* Predicate : bool test(condition) */
+        /* Predicate : bool test(condition)  , test (obj) , to filter data */
+
+        Predicate<String> nam = (name)->  name.equals("hamza");
+        System.out.println(nam.test("hamzaa"));
     }
 }
