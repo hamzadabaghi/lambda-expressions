@@ -7,7 +7,7 @@ public class Demo {
         /* Functional interface : is an interface with only one abstract method */
 
         // this is an anonymous inner class
-        Printer p = new Printer() {
+        Printer p1 = new Printer() {
             @Override
             public void greet(String message) {
                 System.out.println(message);
@@ -15,10 +15,17 @@ public class Demo {
         };
 
         // test
-        p.greet("hello world");
+        p1.greet("hello world");
 
 
+        /* Lambda expression : like an anonymous function  (something)->{something else} */
 
+        Printer p2 = System.out::println;
+
+        // test
+
+        p2.greet("my name is hamza");
+        
         /* Consumer : */
 
 
