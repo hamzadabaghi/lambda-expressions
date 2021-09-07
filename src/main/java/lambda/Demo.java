@@ -4,10 +4,7 @@ package lambda;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.function.IntConsumer;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 public class Demo {
 
@@ -67,7 +64,10 @@ public class Demo {
         System.out.println(getRandom.get());
 
 
-        /* Function : obj map(obj) */
+        /* Function : obj map(obj) , Function<T,R> : R apply(T) , there are a lot of variations*/
+
+        Function<String,Integer> map = String::length;
+        System.out.println(map.apply("hamza"));
 
         /* Predicate : bool test(condition) */
     }
