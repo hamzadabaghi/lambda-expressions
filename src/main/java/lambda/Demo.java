@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.IntConsumer;
+import java.util.function.Supplier;
 
 public class Demo {
 
@@ -60,7 +61,11 @@ public class Demo {
         numbers.forEach(print.andThen(printUpperCase));
 
 
-        /* Supplier : obj supply() */
+        /* Supplier : obj supply() , get method*/
+
+        Supplier<Double> getRandom = Math::random;
+        System.out.println(getRandom.get());
+
 
         /* Function : obj map(obj) */
 
