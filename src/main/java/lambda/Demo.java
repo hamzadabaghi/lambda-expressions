@@ -25,8 +25,18 @@ public class Demo {
         // test
 
         p2.greet("my name is hamza");
+
+
+        /*
+
+        1- a lambda expression can access to the static and non-static fields in the class , local variables as well
+        2- this : represents the reference to the current instance of the class
+
+        */
+
         
         /* Consumer : */
+
 
 
         /* Supplier : */
