@@ -78,5 +78,10 @@ public class Demo {
 
         BinaryOperator<Integer> add = (a,b)->a+b;
         System.out.println((add.apply(1,2)));
+
+        /* unary operator */
+
+        UnaryOperator<Integer> square = (a)->a*a;
+        System.out.println(square.apply(2));
     }
 }
